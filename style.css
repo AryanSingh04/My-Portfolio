@@ -29,6 +29,10 @@ a{
     transform-origin: top;
 
 }
+p.time::before{
+  display: block;
+  content: "Praticing from:-";
+}
 @keyframes load{
     0%{
         color: #000;
