@@ -227,12 +227,13 @@ a{
         height: fit-content;
         padding: 2% 5%;
          display: flex;
-         justify-content: space-between;
+         justify-content: center;
          gap: 5%;
          flex-wrap: wrap;
         & .wrap{
             transition: transform .2s;
             width: 15%;
+            min-width: 200px;
             background-color: rgba(255, 255, 255, 0.051);
             height: fit-content;
           
@@ -244,12 +245,12 @@ a{
             flex-direction: column;
             & img{
                 height: 90px;
-             
             }
 
             & p{
                 font-size: 1.5rem;
                 font-weight: 800;
+                text-align: center;
             }
         }
         & .wrap:hover{
@@ -829,16 +830,19 @@ width: 100vw;
         & main{
             display: flex;
             flex-direction: row;
-            padding: 5% 5%;
+            padding: 15% 5%;
             gap: 2rem;
             justify-content: center;
             & .wrap{
-                width: 35%;
+                width: 60%;
+              
+                padding: 5% 8%;
              
 
 
             }
         }
+      
     }
 }
 
