@@ -1,8 +1,4 @@
 @font-face {
-    font-family: grotesk-bold;
-    src: url(./LilGrotesk-Regular.otf);
-}
-@font-face {
     font-family: matter;
     src: url("./matter-regular.woff2");
 }
