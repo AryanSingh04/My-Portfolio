@@ -13,6 +13,8 @@ a{
     display: block;
     left: 0;
     height: 100vh;
+    /* border-bottom-left-radius: 25rem;
+    border-bottom-right-radius: 25rem; */
     top: 0;
     background-color: black;
     display: flex;
@@ -29,6 +31,8 @@ p.time::before{
   display: block;
   content: "Praticing from:-";
 }
+
+
 @keyframes load{
     0%{
         color: #000;
@@ -61,6 +65,9 @@ p.time::before{
     /* font-family: grotesk-bold; */
     /* color: white; */
     
+}
+*::-webkit-scrollbar{
+    display: none;
 }
 #main{
     overflow: hidden;
@@ -116,7 +123,7 @@ p.time::before{
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        transition: all .2s ease-in-out;
+        transition: all  .2s ease-in-out;
     }
     &:hover span{
         top: -100%;
@@ -264,11 +271,11 @@ p.time::before{
 }
 .marquee{
  position: absolute;
-  top: 75%;
+  top: 70%;
   user-select: none;
   -webkit-user-drag: none;
    transform: translateY(-50%);
-    z-index: 2;
+    z-index: 5;
     width: 120%;
     display: flex;
     overflow: hidden;
@@ -302,7 +309,7 @@ font-weight: 800;
 font-style: normal;
 justify-content: center;
   height: 100%;
-  font-size:6rem;
+  font-size:3.5rem;
   gap: 2rem;
   font-weight: 800;
   & img{
