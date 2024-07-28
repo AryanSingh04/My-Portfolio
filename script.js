@@ -3,7 +3,7 @@ const menu = document.getElementById("menu");
 const list = menu.getElementsByTagName("li");
 let b = document.getElementsByClassName("b");
 let loader = document.getElementsByClassName("loader");
-var text = ["Hello","नमस्ते","Bonjour", "Ciao", "Olà", "やあ", "Hallå", "Guten tag", "Hello"];
+var text = [".Hello",".नमस्ते",".Bonjour", ".Ciao", ".Olà", ".やあ", ".Hallå", ".Guten tag", ".Hello"];
 let bl= document.getElementsByClassName("bl");
 let skill_wrap= document.getElementsByClassName("wrap");
 [...skill_wrap].forEach((e)=>{
@@ -53,8 +53,8 @@ for (let i = 0; i < text.length; i++) {
 }
 
 // Animate loader scale to 0
-loader[0].style.transition = 'transform 0.5s ease';
-loader[0].style.transform = 'scaleY(0)';
+loader[0].style.transition = 'all 0.5s ease';
+loader[0].style.top = '-120%';
 let timeLine = gsap.timeline()
 setTimeout(()=>{
   timeLine.to(".ran",{
@@ -144,6 +144,8 @@ function cursor(x, y) {
     y: y,
   });
 }
+
+gsap
 
 document.addEventListener("mousemove", (e) => {
   cursor(e.pageX, e.pageY);
