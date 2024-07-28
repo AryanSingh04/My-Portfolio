@@ -152,3 +152,26 @@ document.addEventListener("mousemove", (e) => {
   
 })
 
+
+let magnets=document.querySelectorAll(".mag")
+console.log(magnets)
+magnets.forEach((e)=>{
+  e.addEventListener("mousemove", (event) => {
+    const rect = e.getBoundingClientRect();
+    const x = event.clientX - rect.left - rect.width / 2;
+    const y = event.clientY - rect.top - rect.height / 2;
+
+    gsap.to(e, {
+      x: x * 0.6, // Adjust the strength of the "magnetic" pull
+      y: y * 0.6,
+      ease: "power2.out"
+    });
+  });
+  e.addEventListener("mouseleave",(event)=>{
+   gsap.to(e,{
+    x:0,
+    y:0,
+    ease:"bounce(0.5)"
+   })
+  })
+})
