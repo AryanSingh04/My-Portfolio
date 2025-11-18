@@ -261,7 +261,7 @@ p.time::before{
             }
         }
         & .wrap:hover{
-           transform: scale(1.1);
+           
             cursor: pointer;
               box-shadow: .5rem .5rem 1rem rgba(255, 255, 255, 0.242);
             background-color: rgb(255, 255, 255);
@@ -515,6 +515,8 @@ nav{
                     user-select: none;
                     -webkit-user-drag: none; /* Chrome all / Safari all */
                     width: 90%;
+                    object-fit: contain;
+                    background-color: white;
                     aspect-ratio: 1;
                     border-radius: 50%;
                 }

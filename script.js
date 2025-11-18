@@ -175,3 +175,34 @@ magnets.forEach((e)=>{
    })
   })
 })
+
+
+function timedifference(date1) {
+  const now = new Date();
+  const diffInMs = now - date1;
+  const diffInDays = Math.floor(diffInMs / (1000 * 60 * 60 * 24));
+  const diffInMonths = Math.floor(diffInDays / 30);
+  const diffInYears = Math.floor(diffInDays / 365); 
+  // Approximate calculation like 6 months , 1 year and all 
+  if (diffInDays < 30) {
+    return diffInDays + " Days";
+  } else if (diffInDays < 365) {
+    return diffInMonths + " Months";
+  } else {
+    return diffInYears + " Years";
+  } 
+}
+
+let reactTime=document.getElementById("react-time");
+let expressTime=document.getElementById("express-time");
+let sqlTime=document.getElementById("sql-time");
+let pythonTime=document.getElementById("python-time");
+let dockerTime=document.getElementById("docker-time");
+let cppTime=document.getElementById("cpp-time");
+// date format YYYY-MM-DD
+reactTime.innerHTML=timedifference(new Date("2022-06-01")); 
+expressTime.innerHTML=timedifference(new Date("2023-04-01")); 
+sqlTime.innerHTML=timedifference(new Date("2025-01-01"));
+pythonTime.innerHTML=timedifference(new Date("2014-06-01"));
+dockerTime.innerHTML=timedifference(new Date("2025-08-04"));
+cppTime.innerHTML=timedifference(new Date("2025-05-01"));
