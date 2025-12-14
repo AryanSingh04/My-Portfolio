@@ -534,7 +534,6 @@ nav{
     }
 
 .social-page{
-/* height: 100vh; */
 overflow: hidden;
 background-color: #8A31EF;
 width: 100vw;
@@ -562,19 +561,19 @@ width: 100vw;
     }
 }
   & main{
-    height: 85vh;
-    /* background-color: blue; */
   display: flex;
   padding: 2rem 1rem;
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
+  gap: 2rem;
     & .project{
         width: 90%;
+
         background-color: rgba(255, 255, 255, 0.586);
        transition: all .2s linear;
         backdrop-filter: blur(5px);
-         height: 20%;
+         height: 8rem;
          display: flex;
          align-items: center;
          justify-content: space-between;
@@ -693,6 +692,9 @@ width: 100vw;
     }
 }
 @media (width<769px){
+    #cur{
+        display: none;
+    }
     nav{
         /* position: fixed;
         top: 0; */
