@@ -679,7 +679,7 @@ width: 100vw;
                 /* background-image: conic-gradient(from -45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888, #8a3ab9, #5a5fbf, #3598dc, #3598dc); Adjust colors as needed */
                 background-image: linear-gradient(45deg, #EEC501, #EF5B01, #E80811, #8C49BF);
       background-size: cover;
-      -webkit-background-clip: text; /* Clip the gradient to the text */
+     
       color: transparent; /
             }
             & li:nth-child(2)>a:hover{
@@ -793,14 +793,18 @@ width: 100vw;
         & main{
             & .project{
                 width: 80%;
-                height: 15%;
+                height: 3rem;
+                & .arw{
+                    font-size: 5vh;
+                }
             }
+
         }
         & .header{
             & .btn{
            padding: .2rem 1rem;
            width: 30%;
-           font-size: 1rem;
+           font-size: .8rem;
            white-space: nowrap;
             }
         }
